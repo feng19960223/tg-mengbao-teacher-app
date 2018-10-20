@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFAFA"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title_bar" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/dp_4"
+            android:closeIcon="@drawable/ic_clear_white_24dp"
+            android:queryBackground="@color/colorPrimary"
+            android:queryHint="@string/search"
+            android:searchHintIcon="@drawable/ic_search_24dp"
+            android:searchIcon="@drawable/ic_search_24dp"
+            android:theme="@style/MySearchView" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvAddressBook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvNav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:overScrollMode="never" />
+    </FrameLayout>
+
+</LinearLayout>

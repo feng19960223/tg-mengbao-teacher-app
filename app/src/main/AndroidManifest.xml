@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.turingoal.mengbao.teacher">
+
+    <!-- 访问权限-访问网络连接 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问权限-获取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问权限-WIFI状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 访问权限-WIFI变化 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问权限-震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 访问权限-SD卡读写 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问权限-读取设备外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 访问权限-写入设备外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问权限-摄像头-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 访问权限-闪光灯-->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 访问权限-设备信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问权限-拨打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 硬件支持
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> -->
+    <!-- rocoo(低版本问题) -->
+    <uses-sdk tools:overrideLibrary="com.dodola.rocoo" />
+    <!-- application配置 -->
+    <application
+        android:name="com.turingoal.common.app.TgApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <!--欢迎页面-->
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:theme="@style/AppTheme.appStart"></activity>
+        <!--Main页面-->
+        <activity android:name=".ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登陆-->
+        <activity android:name=".ui.activity.LoginActivity" />
+        <!--忘记密码-->
+        <activity android:name=".ui.activity.ForgetActivity" />
+        <!--验证码-->
+        <activity android:name=".ui.activity.VerificationActivity" />
+        <!--设置新密码-->
+        <activity android:name=".ui.activity.NewPasswordActivity" />
+        <!--我的收藏-->
+        <activity android:name=".ui.activity.CollectActivity" />
+        <!--基础设置-->
+        <activity android:name=".ui.activity.SettingActivity" />
+        <!--关于我们-->
+        <activity android:name=".ui.activity.AboutActivity" />
+        <!--用户协议-->
+        <activity android:name=".ui.activity.AgreementActivity" />
+        <!--课程表-->
+        <activity android:name=".ui.activity.CoursesActivity" />
+        <!--食谱-->
+        <activity android:name=".ui.activity.CookbookActivity" />
+        <!--通知-->
+        <activity android:name=".ui.activity.InformActivity" />
+        <!--通知详情-->
+        <activity android:name=".ui.activity.InformDetailActivity" />
+        <!--通讯录-->
+        <activity android:name=".ui.activity.AddressBookActivity" />
+        <!--老师个人信息-->
+        <activity android:name=".ui.activity.InfoTeacherActivity" />
+        <!--老师个性签名修改-->
+        <activity android:name=".ui.activity.InfoTeacherResumeActivity" />
+        <!--更换手机号码-->
+        <activity android:name=".ui.activity.ChangePhoneActivity" />
+        <!--更换手机号码的验证码-->
+        <activity android:name=".ui.activity.ChangeVerificationActivity" />
+        <!--修改密码-->
+        <activity android:name=".ui.activity.ChangePasswordActivity" />
+        <!--考勤记录-->
+        <activity android:name=".ui.activity.AttendanceActivity" />
+        <!--考勤记录备选人员-->
+        <activity android:name=".ui.activity.AttendancePeopleActivity" />
+        <!--增加考勤记录-->
+        <activity android:name=".ui.activity.AttendanceAddActivity" />
+        <!--我的点评-->
+        <activity android:name=".ui.activity.CommentsRecordActivity" />
+        <!--点评详情-->
+        <activity android:name=".ui.activity.CommentsDetailActivity" />
+        <!--点评备选人员-->
+        <activity android:name=".ui.activity.CommentsPeopleActivity" />
+        <!--新增加点评-->
+        <activity android:name=".ui.activity.CommentsAddActivity" />
+        <!--亲子作业-->
+        <activity android:name=".ui.activity.HomeworkActivity" />
+        <!--亲子作业详情-->
+        <activity android:name=".ui.activity.HomeworkDetailActivity" />
+        <!--新增加作业-->
+        <activity android:name=".ui.activity.HomeworkAddActivity" />
+        <!--已经成作业的-->
+        <activity android:name=".ui.activity.HomeworkYesActivity" />
+        <!--已完成作业送花-->
+        <activity android:name=".ui.activity.HomeworkFlowerActivity" />
+        <!--没有完成作业的-->
+        <activity android:name=".ui.activity.HomeworkNoActivity" />
+        <!--班级相册-->
+        <activity android:name=".ui.activity.AlbumActivity" />
+        <!--新建相册-->
+        <activity android:name=".ui.activity.AlbumAddActivity" />
+        <!--班级组相册-->
+        <activity android:name=".ui.activity.PicturesActivity" />
+        <!--班级相册详情-->
+        <activity android:name=".ui.activity.PicturesDetailActivity" />
+        <!--发布照片-->
+        <activity android:name=".ui.activity.PicturesAddActivity" />
+        <!--爱心备注-->
+        <activity android:name=".ui.activity.LoveRemarkActivity" />
+        <!--收到爱心备注-->
+        <activity android:name=".ui.activity.LoveReceivedActivity" />
+        <!--学校风采照片-->
+        <activity android:name=".ui.activity.SchoolPhotoActivity" />
+        <!--学校风采照片详情-->
+        <activity android:name=".ui.activity.SchoolPhotoDetailActivity" />
+        <!--绑定-->
+        <activity android:name=".ui.activity.BindingAccountActivity" />
+        <!--绑定用户-->
+        <activity android:name=".ui.activity.BindingUserAcitivty" />
+        <!--消息中心-->
+        <activity android:name=".ui.activity.MessageActivity" />
+
+        <!--友盟-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a28cfe08f4a9d36850002bf" />
+        <!--推送-->
+        <meta-data
+            android:name="5a4c7610f29d98689800015b"
+            android:value="655b63094356aa005432a8203120608e" />
+        <!--多渠道统计，配合Gradle-->
+        <!--<meta-data-->
+        <!--android:name="UMENG_CHANNEL"-->
+        <!--android:value="${UMENG_CHANNEL_VALUE}" />-->
+        <!-- 分享开始 -->
+        <!--新浪-->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.a.a"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--微信-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--支付宝-->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent1106655366" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 分享结束 -->
+    </application>
+</manifest>

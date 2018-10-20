@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_8"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvSwitchUpgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_switch_start_selector"
+                android:enabled="true"
+                android:paddingBottom="@dimen/dp_4"
+                android:paddingLeft="@dimen/dp_24"
+                android:paddingRight="@dimen/dp_24"
+                android:paddingTop="@dimen/dp_4"
+                android:text="@string/rank_upgrade"
+                android:textColor="@drawable/color_switch_seletor" />
+
+            <TextView
+                android:id="@+id/tvSwitchFlower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_switch_end_selector"
+                android:enabled="false"
+                android:paddingBottom="@dimen/dp_4"
+                android:paddingLeft="@dimen/dp_24"
+                android:paddingRight="@dimen/dp_24"
+                android:paddingTop="@dimen/dp_4"
+                android:text="@string/rank_flower"
+                android:textColor="@drawable/color_switch_seletor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_8"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnSwitchUpgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_4"
+                android:paddingLeft="@dimen/dp_24"
+                android:paddingRight="@dimen/dp_24"
+                android:paddingTop="@dimen/dp_4"
+                android:text="@string/rank_upgrade"
+                android:textColor="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/btnSwitchFlower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_4"
+                android:paddingLeft="@dimen/dp_24"
+                android:paddingRight="@dimen/dp_24"
+                android:paddingTop="@dimen/dp_4"
+                android:text="@string/rank_flower"
+                android:textColor="@android:color/transparent" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rank_2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_medals_v2" />
+
+                    <ImageView
+                        android:id="@+id/ivAvatar2"
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="@dimen/dp_64"
+                        android:src="@drawable/ic_avatar_default" />
+
+                    <TextView
+                        android:id="@+id/tvFlowerCount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:drawableStart="@drawable/ic_upgrade"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp_4"
+                        android:text="x 0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rank_1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_medals_v1" />
+
+                        <ImageView
+                            android:id="@+id/ivAvatar1"
+                            android:layout_width="@dimen/dp_64"
+                            android:layout_height="@dimen/dp_64"
+                            android:src="@drawable/ic_avatar_default" />
+
+                        <TextView
+                            android:id="@+id/tvFlowerCount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/dp_4"
+                            android:drawableStart="@drawable/ic_upgrade"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dp_4"
+                            android:text="x 0" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rank_3"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:paddingStart="@dimen/dp_16">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_medals_v3" />
+
+                    <ImageView
+                        android:id="@+id/ivAvatar3"
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="@dimen/dp_64"
+                        android:src="@drawable/ic_avatar_default" />
+
+                    <TextView
+                        android:id="@+id/tvFlowerCount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:drawableStart="@drawable/ic_upgrade"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp_4"
+                        android:text="x 0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvRank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFAFAFA"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

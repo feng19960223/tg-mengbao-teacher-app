@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFAFA"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verification_hint" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:text="+"
+            android:textColor="#FF000000" />
+    </LinearLayout>
+
+    <com.jkb.vcedittext.VerificationCodeEditText
+        android:id="@+id/etVerification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_48"
+        android:digits="@string/rule09"
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_40"
+        app:bottomLineHeight="@dimen/dp_2"
+        app:bottomLineNormalColor="@color/line"
+        app:bottomLineSelectedColor="@color/colorAccent"
+        app:figures="6"
+        app:selectedBackgroundColor="@color/line2"
+        app:verCodeMargin="@dimen/dp_10" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_36"
+        android:background="@drawable/bg_btn_orange_selector"
+        android:enabled="false"
+        android:text="@string/yes"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tvAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center"
+        android:text="@string/verification_again" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16" />
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_fun"
+        android:clickable="true"
+        android:drawablePadding="@dimen/dp_8"
+        android:drawableStart="@drawable/ic_about"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_16"
+        android:text="@string/string_about" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/tvAgreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_fun"
+        android:clickable="true"
+        android:drawablePadding="@dimen/dp_8"
+        android:drawableStart="@drawable/ic_agreement"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_16"
+        android:text="@string/string_agreement" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16" />
+
+    <TextView
+        android:id="@+id/tvOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_fun"
+        android:clickable="true"
+        android:drawablePadding="@dimen/dp_8"
+        android:drawableStart="@drawable/ic_out"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_16"
+        android:text="@string/string_out" />
+
+</LinearLayout>

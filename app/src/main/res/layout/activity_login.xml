@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fa8"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="@dimen/dp_100"
+        android:paddingBottom="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_24"
+        android:src="@mipmap/ic_launcher" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FFFFFF"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_16"
+        app:counterEnabled="true"
+        app:counterMaxLength="24"
+        app:counterOverflowTextAppearance="@style/count_over_text"
+        app:counterTextAppearance="@style/count_text">
+
+        <com.turingoal.common.widget.ClearEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/ruleAZaz09"
+            android:drawableLeft="@drawable/ic_user_24dp"
+            android:drawablePadding="@dimen/dp_4"
+            android:hint="@string/string_login_username"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FFFFFF"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
+        app:counterEnabled="true"
+        app:counterMaxLength="24"
+        app:counterOverflowTextAppearance="@style/count_over_text"
+        app:counterTextAppearance="@style/count_text">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/ruleAZaz09"
+            android:drawablePadding="@dimen/dp_4"
+            android:drawableStart="@drawable/ic_lock_24dp"
+            android:hint="@string/string_password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FFFFFF">
+
+        <CheckBox
+            android:id="@+id/cbRememberPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/string_remember" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/bg_btn_blue_selector"
+        android:enabled="false"
+        android:text="@string/string_login"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tvForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_28"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="@string/string_login_forget"
+        android:textColor="#FFFFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/string_login_other"
+            android:textColor="#FFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <ImageView
+                android:id="@+id/loginWeChat"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@mipmap/login_wechat_background"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/login_wechat_icon" />
+
+            <ImageView
+                android:id="@+id/loginSina"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:background="@mipmap/login_sina_background"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/login_sina_icon" />
+
+            <ImageView
+                android:id="@+id/loginQQ"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@mipmap/login_qq_background"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/login_qq_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

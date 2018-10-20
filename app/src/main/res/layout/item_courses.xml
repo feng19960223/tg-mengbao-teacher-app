@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF8A65"
+        android:padding="@dimen/dp_8"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/sp_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="@dimen/dp_64"
+                android:text="@string/forenoon" />
+
+            <TextView
+                android:layout_width="@dimen/dp_2"
+                android:layout_height="match_parent"
+                android:background="#B7D9E3" />
+
+            <TextView
+                android:id="@+id/tvForenoon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingStart="@dimen/dp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_14"
+            android:layout_marginStart="2dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="#B7D9E3"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="@dimen/dp_2"
+                android:layout_height="2dp"
+                android:layout_margin="@dimen/dp_2"
+                android:background="#FC7A92" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="4"
+                android:background="#B7D9E3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="@dimen/dp_64"
+                android:text="@string/afternoon" />
+
+            <TextView
+                android:layout_width="@dimen/dp_2"
+                android:layout_height="match_parent"
+                android:background="#B7D9E3" />
+
+            <TextView
+                android:id="@+id/tvAfternoon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:paddingEnd="@dimen/dp_16"
+                android:paddingStart="@dimen/dp_16" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

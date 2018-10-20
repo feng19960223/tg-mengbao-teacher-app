@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">萌宝养成教师端</string>
+    <string name="app_description">萌宝成长日记，陪伴孩子每一天</string>
+    <!--Activity或者Fragment的title-->
+    <string name="activity_login">登录</string>
+    <string name="activity_forget">找回密码</string>
+    <string name="activity_verification">验证码</string>
+    <string name="activity_newPassword">设置新密码</string>
+    <string name="activity_collect">我的收藏</string>
+    <string name="activity_setting">基本设置</string>
+    <string name="activity_about">关于</string>
+    <string name="activity_agreement">用户协议</string>
+    <string name="activity_courses">课程表</string>
+    <string name="activity_cookbook">食谱</string>
+    <string name="activity_inform">通知</string>
+    <string name="activity_inform_detail">通知详情</string>
+    <string name="activity_address_book">通讯录</string>
+    <string name="activity_info_teacher">我的资料</string>
+    <string name="activity_info_teacher_name">更改名字</string>
+    <string name="activity_info_teacher_resume">个性签名</string>
+    <string name="activity_change_phone">更换手机号码</string>
+    <string name="activity_change_password">修改密码</string>
+    <string name="activity_change_verification">验证码</string>
+    <string name="activity_attendance">考勤记录</string>
+    <string name="activity_attendance_people">选择人员</string>
+    <string name="activity_attendance_add">记录考勤</string>
+    <string name="activity_comments">我的点评</string>
+    <string name="activity_comments_detail">点评详情</string>
+    <string name="activity_comments_people">选择人员</string>
+    <string name="activity_comments_add">点评</string>
+    <string name="activity_homework">亲子作业</string>
+    <string name="activity_homework_detail">作业详情</string>
+    <string name="activity_homework_add">发布作业</string>
+    <string name="activity_homework_yes">作业完成</string>
+    <string name="activity_homework_no">作业未完成</string>
+    <string name="activity_homework_flower">作业详情</string>
+    <string name="activity_album">班级相册</string>
+    <string name="activity_album_add">新建相册</string>
+    <string name="activity_pictures">班级相册</string>
+    <string name="activity_pictures_detail">班级相册</string>
+    <string name="activity_pictures_add">发布照片</string>
+    <string name="activity_school_photo">校园风采</string>
+    <string name="activity_school_photo_detail">校园风采</string>
+    <string name="activity_love_remark">爱心备注</string>
+    <string name="activity_love_received">爱心备注</string>
+    <string name="activity_binding_account">账号绑定</string>
+    <string name="activity_binding_user">绑定用户</string>
+    <string name="activity_message">消息中心</string>
+
+    <!--主页面底部-->
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">排行</string>
+    <string name="title_notifications">个人</string>
+    <!--主功能菜单-->
+    <string name="fun_attendance">考勤</string>
+    <string name="fun_cookbook">食谱</string>
+    <string name="fun_inform">通知</string>
+    <string name="fun_address_book">通讯录</string>
+    <string name="fun_courses">课表</string>
+    <string name="fun_class_pictures">班级相册</string>
+    <string name="fun_homework">亲子作业</string>
+    <string name="fun_comments">我的点评</string>
+    <string name="fun_school_photo">校园风采</string>
+    <string name="fun_love_remark">爱心备注</string>
+    <string name="fun_message">消息中心</string>
+
+    <!--个人中心页面fragment-->
+    <string name="default_teacher_name">萌宝老师</string>
+    <string name="default_resume">用真爱滋润孩子们幼小的心田，唱响孩子们甜美的歌谣，在我的工作中我会细心耐心诚心对待每一位孩子和家长，在平等和谐的环境中，用爱心去呵护孩子的童心，让每一个“祖国的花朵”灿烂地开放!</string>
+    <string name="collect">我的收藏</string>
+    <string name="email">园长信箱</string>
+    <string name="share">分享应用</string>
+    <string name="setting">基础设置</string>
+    <string name="copy_success">复制文本成功</string>
+    <string name="copyurl_success">复制链接成功</string>
+    <string name="favorite_success">收藏成功</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_fail">分享失败</string>
+
+    <!--排行页面fragment-->
+    <string name="title_rank">排行榜</string>
+    <string name="rank">第%1$d名</string>
+    <string name="rank_upgrade">经验榜</string>
+    <string name="rank_flower">红花榜</string>
+
+    <!--登录activity-->
+    <string name="string_login_username">账号</string>
+    <string name="string_password">密码</string>
+    <string name="string_login">登录</string>
+    <string name="string_login_register">立即注册</string>
+    <string name="string_login_forget">忘记密码？</string>
+    <string name="string_login_other">其他登录方式</string>
+    <string name="string_remember">记住密码</string>
+    <string name="string_username_max_hint">用户名最大长度是24</string>
+    <string name="string_password_max_hint">密码的最大长度是24</string>
+    <string name="string_username_min_hint">用户名最小长度是5</string>
+    <string name="string_password_min_hint">密码的最小长度是6</string>
+
+    <!--忘记密码activity-->
+    <string name="phone">手机号码</string>
+    <string name="next">下一步</string>
+    <string name="getVerification">获取</string>
+    <string name="string_phone_max_hint">电话的最大长度是11</string>
+    <string name="forget_hint">找回密码需要通过短信验证。</string>
+
+    <!--填写验证码activiy-->
+    <string name="verification_hint">验证码已发送到相关联手机：</string>
+    <!--使用方法String.format(R.string.verification_again,55);-->
+    <string name="verification_again">重新获取验证码（%1$dS）</string>
+    <string name="verification_again_finish">点击重新获取验证码</string>
+    <string name="verification_again_success">获取验已重新发送</string>
+    <string name="verification_error">验证码错误</string>
+    <string name="verification_success">验证码正确</string>
+
+    <!--设置新新密码activity-->
+    <string name="new_password">新密码</string>
+    <string name="string_save">保存</string>
+
+    <!--收藏activity-->
+    <string name="search">搜索</string>
+
+    <!--基础设置activity-->
+    <string name="string_about">关于我们</string>
+    <string name="string_agreement">使用协议</string>
+    <string name="string_out">退出</string>
+
+    <!--关于activity-->
+    <string name="company_name">图灵谷（北京）科技有限公司</string>
+    <string name="company_web">网址</string>
+    <string name="company_web_content">www.turingoal.com</string>
+    <string name="company_telephone">电话</string>
+    <string name="company_telephone_content">010-89942808</string>
+    <string name="company_mail">邮箱</string>
+    <string name="company_mail_content">service@turingoal.com</string>
+    <string name="company_weibo">微博</string>
+    <string name="company_weibo_content">http://weibo.com/turingoal</string>
+    <string name="company_address">地址</string>
+    <string name="company_address_content">北京昌平东亚上北10号1单元1908室</string>
+
+    <!--课表activity-->
+    <string name="forenoon">上午</string>
+    <string name="rest">午休</string>
+    <string name="afternoon">下午</string>
+
+    <!--食谱activity-->
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <string name="food_1">早餐</string>
+    <string name="food_2">早餐加餐</string>
+    <string name="food_3">午餐</string>
+    <string name="food_4">午餐加餐</string>
+    <string name="food_5">晚餐</string>
+
+    <!--通讯录activity-->
+    <string name="string_principal">园长</string>
+    <string name="string_teacher">老师</string>
+    <string name="string_parents">家长</string>
+
+    <!--家长信息activity-->
+    <string name="edit">编辑</string>
+    <string name="teacher_info_name">老师姓名</string>
+    <string name="teacher_info_phone">手机号码</string>
+    <string name="binding">绑定账号</string>
+    <string name="teacher_info_change">修改密码</string>
+    <string name="teacher_info_quit">退出登录</string>
+
+    <!--更改手机号码activity-->
+    <string name="new_phone">新手机号码</string>
+    <string name="new_phone_hint">更改手机号码需要通过短信验证。</string>
+
+    <!--修改密码activity-->
+    <string name="password_old">旧密码</string>
+    <string name="password_new">新密码</string>
+    <string name="password_confirm">确认密码</string>
+    <string name="change">确定修改</string>
+    <string name="change_password_hint">密码修改成功，请重新登录！</string>
+    <string name="string_password_equals_hint">两次密码不同</string>
+
+    <!--增加考勤记录activity-->
+    <string name="info_card">资料卡</string>
+    <string name="cause">原因</string>
+    <string name="remarks">备注</string>
+    <string name="attendance1">迟到</string>
+    <string name="attendance2">早退</string>
+    <string name="attendance3">旷课</string>
+    <string name="attendance4">请假</string>
+
+    <!--爱心备注-->
+    <string name="rb1">喂药</string>
+    <string name="rb2">忌口</string>
+    <string name="rb3">物品</string>
+    <string name="rb4">其他</string>
+    <string name="received">收到</string>
+
+    <!--点评activity-->
+    <string name="parents_reply">家长回复</string>
+    <string name="comment_record">点评记录</string>
+    <string name="comment_now">立即点评</string>
+    <string name="comment_already">今日点评</string>
+    <string name="comment_title">评价标题</string>
+    <string name="comment_content">评价内容</string>
+    <string name="comment_flower_hint1">今天的点评小花朵还剩余%1$d朵</string>
+
+    <!--亲子作业详情activity-->
+    <string name="homework_yes">已交作业（%1$d）人</string>
+    <string name="homework_no">未交作业（%1$d）人</string>
+    <string name="homework_title">作业标题</string>
+    <string name="homework_content">作业内容</string>
+    <string name="homework_no_appraise">未评价</string>
+    <string name="homework_flower">送花</string>
+    <string name="homework_flower_hint1">该小朋友已经送过花了</string>
+    <string name="homework_flower_hint2">今天的作业小花朵已用光了</string>
+    <string name="homework_flower_hint3">今天的作业小花朵还剩余%1$d朵</string>
+
+    <!--相册activity-->
+    <array name="fun">
+        <item>删除</item>
+        <item>重命名</item>
+        <item>编辑描述</item>
+        <item>修改封面</item>
+    </array>
+    <string name="item_fun_delete">删除</string>
+    <string name="item_fun_title_rename">重命名</string>
+    <string name="item_fun_description_rename">编辑描述</string>
+    <string name="item_fun_cover_edit">修改封面</string>
+    <string name="album_delete_hint">确定要删除这个相册吗？</string>
+    <string name="album_title_rename">相册重命名</string>
+    <string name="album_title_input">输入相册名称</string>
+    <string name="album_description_rename">编辑描述</string>
+    <string name="album_description_input">输入相册描述</string>
+
+    <!--新增加相冊-->
+    <string name="album_title">标题</string>
+    <string name="album_description">描述</string>
+
+    <!--相册-->
+    <string name="pictures_delete_hint">确定要删除这张照片吗？</string>
+
+    <!--第三方绑定-->
+    <string name="binding_qq">绑定QQ</string>
+    <string name="binding_WeChat">绑定微信</string>
+    <string name="binding_Sina">绑定新浪</string>
+    <string name="binding_no">绑定</string>
+    <string name="binding_yes">已绑定</string>
+
+    <!--绑定用户-->
+    <string name="binding_user">绑定用户</string>
+
+    <!--消息中心-->
+    <string name="message_delete_hint">确定要删除这条消息吗？</string>
+
+    <!--弹出邮箱选择框的提示选择语-->
+    <string name="hint_title_select">请选择</string>
+    <!--空白-->
+    <string name="common_blank"></string>
+    <string name="yes">确定</string>
+    <string name="cancel">取消</string>
+    <string name="back_return">返回</string>
+    <string name="noData">没有数据</string>
+    <!--空白-->
+    <string name="common_test">测试数据</string>
+    <!--软件 titel-->
+    <string name="app_title">萌宝养成</string>
+    <!-- 再按一次退出程序-->
+    <string name="dbclick_exit">再按一次退出程序</string>
+    <!-- 登录信息过去-->
+    <string name="token_expired">登录信息已过期，请重新登录！</string>
+    <string name="empty">没有数据</string>
+    <string name="error">出错了~</string>
+    <!--EditText可以输入的字符-->
+    <string name="ruleAZaz09">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="rule09">0123456789</string>
+</resources>
